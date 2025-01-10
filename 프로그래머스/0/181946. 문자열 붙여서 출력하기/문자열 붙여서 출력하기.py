@@ -1,2 +1,1 @@
-a, b = input().strip().split(' ')
-print(a+b)
+print(input().strip().replace(' ',''))
