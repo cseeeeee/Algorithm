@@ -1,2 +1,2 @@
-str = input()
+str = input();
 print(str)
