@@ -1,16 +1,7 @@
 def seq_song(seq_list):
-  ascending = True
-  descending = True
-
-  for i in range(len(seq_list) - 1):
-    if seq_list[i+1] - seq_list[i] != 1:
-      ascending = False
-    if seq_list[i+1] - seq_list[i] != -1:
-      descending = False
-    
-  if ascending:
+  if seq_list == sorted(seq_list):
     return "ascending"
-  elif descending:
+  elif seq_list == sorted(seq_list, reverse=True):
     return "descending"
   else:
     return "mixed"
